@@ -14,14 +14,14 @@ function removeAllChildren(element) {
     }   
 }
 userNameInput.onkeydown=(event)=>{
-    if (event.key==='Enter'){
+    if (event.key === 'Enter'){
         assessmentButton.onclick();
     }
 };
 
 assessmentButton.onclick=function(){
     const userName=userNameInput.value;
-    if (userName.length===0){//名前がからのときは処理を終了する
+    if (userName.length === 0){//名前がからのときは処理を終了する
         return;
     }
     console.log(userName);
